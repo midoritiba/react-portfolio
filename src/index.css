@@ -1,7 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: none;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+body {
+  min-height: 98vh;
+  font-family: "Ubuntu Mono", monospace !important;
+  cursor: none;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right,
+    #434343 0%,
+    black 100%
+  ) !important;
 }
