@@ -10,13 +10,219 @@
 }
 
 body {
-  min-height: 98vh;
+  height: auto;
   font-family: "Ubuntu Mono", monospace !important;
   cursor: none;
   overflow: hidden;
+  /* background-image: linear-gradient(to bottom, #055869 0%, #0c2d34 100%); */
   background-image: linear-gradient(
     to right,
-    #434343 0%,
-    black 100%
+    #052930,
+    #062f37,
+    #07353e,
+    #083b45,
+    #09414c
   ) !important;
+}
+
+#bg-style {
+  padding: 86%;
+  background-color: rgb(4, 28, 33);
+  display: block;
+  position: absolute;
+  top: 0%;
+  right: -150%;
+  clip-path: polygon(0 0, 56% 0, 100% 100%, 40% 100%);
+  z-index: -1;
+}
+
+.main {
+  margin: 20px 0 30px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+h1 {
+  text-shadow: -10px 10px 10px #6d6d6d54, -6px 10px 1px #ffffff18;
+  color: white;
+}
+
+h2,
+h3,
+h4 {
+  color: #109ab6;
+}
+
+/* header */
+.header {
+  z-index: 1;
+  background-color: #052930;
+}
+.nav-items {
+  color: rgb(181, 92, 16);
+  letter-spacing: 0.4rem;
+}
+
+.nav-items:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.active {
+  color: rgb(255, 116, 2) !important;
+  font-weight: bold;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(181, 92, 16, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(181, 92, 16);
+}
+
+/* scrollbar */
+.scroll {
+  overflow-y: auto;
+  max-height: 85vh;
+  padding: 0 1rem 3rem;
+  overflow-x: hidden;
+  direction: ltr;
+  scrollbar-color: #d4aa70 #e4e4e4;
+  scrollbar-width: thin;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 15px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background-color: #e4e4e433;
+  border-radius: 100px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  background-color: #cc751e7a;
+}
+
+/* About page */
+.about-item-card {
+  border: 2px solid black;
+  padding: 2%;
+  position: absolute;
+}
+
+.draggable {
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+  text-align: center;
+  top: 40%;
+  left: 25%;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  opacity: 0.95;
+}
+.draggable-2 {
+  padding: 10px;
+  width: 400px;
+  border-radius: 20px;
+  text-align: center;
+  top: 30%;
+  left: 35%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  color: white;
+  opacity: 0.95;
+  font-size: 18px;
+}
+.draggable-3 {
+  width: 300px;
+  height: 200px;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 50px;
+  top: 30%;
+  left: 35%;
+  background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+  color: white;
+  opacity: 0.95;
+  font-size: 18px;
+}
+.hover-link:hover {
+  color: rgb(54, 54, 54);
+}
+
+/* button */
+.btn {
+  margin-top: 2rem;
+  cursor: none;
+  color: white;
+  text-shadow: -2px 2px 2px rgba(150, 150, 150, 0.77);
+  background-color: transparent;
+  border: 2px solid rgb(255, 116, 2);
+  font-size: 16px;
+  box-shadow: -9px 10px 5px 0px rgba(4, 28, 33, 0.75);
+  -webkit-box-shadow: -9px 10px 5px 0px rgba(4, 28, 33, 0.75);
+  -moz-box-shadow: -9px 10px 5px 0px rgba(4, 28, 33, 0.75);
+}
+.btn:hover {
+  background-color: rgb(181, 92, 16);
+  color: white;
+  border: 2px solid rgb(181, 92, 16);
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #052930 !important;
+  color: white;
+}
+
+/* typing-effect */
+#type-effect {
+  overflow: hidden;
+  border-right: 0.08em solid rgba(205, 134, 63, 0.562);
+  letter-spacing: 0.05em;
+  animation: typing 4.5s steps(40, end), blink-caret 1.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(205, 134, 63, 0.562);
+  }
 }
