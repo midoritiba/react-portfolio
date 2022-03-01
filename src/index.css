@@ -26,15 +26,17 @@ body {
   ) !important;
 }
 
+
 #bg-style {
-  padding: 86%;
+  padding: 40%;
   background-color: rgb(4, 28, 33);
   display: block;
   position: absolute;
   top: 0%;
-  right: -150%;
-  clip-path: polygon(0 0, 56% 0, 100% 100%, 40% 100%);
+  right: 0%;
+  clip-path: polygon(50% 0%, 100% 100%, 100% 0);
   z-index: -1;
+  overflow: hidden;
 }
 
 .main {
