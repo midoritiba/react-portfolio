@@ -27,7 +27,7 @@ const Projects = () => {
         {displayProjects}
         </Row>
         
-        <Link className='link btn' style={{width: '100px'}} to='/about'>about me</Link>
+        <Link className='link btn mb-3' style={{width: '100px'}} to='/about'>about me</Link>
         </motion.div>
         </div>
     </Container>
