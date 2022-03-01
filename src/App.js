@@ -13,9 +13,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
-  <AnimatePresence>
-    <Router>
-    <CustomCursor
+    <>
+    <AnimatePresence>
+      <CustomCursor
       targets={['.link']}
       customClass='custom-cursor'
       dimensions={50}
@@ -27,6 +27,8 @@ const App = () => {
       }}
       targetOpacity={0.6}
     />
+  
+    <Router>
         <Header />
           <Routes>
             <Route className='link' path='/' element={<Home />} />
@@ -37,6 +39,7 @@ const App = () => {
         <Footer />
     </Router>
   </AnimatePresence>
+  </>
   );
 }
 

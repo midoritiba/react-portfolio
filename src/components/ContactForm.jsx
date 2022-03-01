@@ -1,22 +1,24 @@
+import {Form, Container} from 'react-bootstrap'
 import emailjs from 'emailjs-com'
 import { useRef, useState } from 'react';
 import{ init } from '@emailjs/browser';
-init("kmek_W5mktXnxykMV");
+init('kmek_W5mktXnxykMV');
 
 const ContactForm = () => {
   const form = useRef();
   const [submitted, setSubmitted] = useState(false);
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_kkzq1oa', 'template_4m59o3k', form.current, "kmek_W5mktXnxykMV")
+    emailjs.sendForm('service_kkzq1oa', 'template_9ewedmh', form.current, 'kmek_W5mktXnxykMV')
     .then(
       (result) => {
         console.log(result.text);
-        alert("SUCCESS!");
+        alert('SUCCESS!');
       },
       (error) => {
         console.log(error.text);
-        alert("FAILED...", error);
+        alert('FAILED...', error);
       });
       setSubmitted(true);
 
@@ -25,56 +27,34 @@ const ContactForm = () => {
   if (submitted) {
     return (
       <>
-        <div className="text-2xl">Thank you!</div>
-        <div className="text-md">I'll be in touch soon.</div>
+        <h1 className='text-2xl'>Thank you!</h1>
+        <h1 className='text-md'>I'll be in touch soon.</h1>
       </>
     );
   }
 
   return (
-    <>
-    <h2 class="pt-3 pt-lg-0 mb-5 fs-2 fw-bold text-center" >Get in touch  </h2>
-    <form ref={form} onSubmit={handleSubmit}>
-      <div className="mb-3 pt-0" >
-        <input
-          type="text"
-          placeholder="Your name"
-          name="name"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-          required
-          style={{width: '400px'}}
-        />
-      </div>
-      <div className="mb-3 pt-0">
-        <input
-          type="email"
-          placeholder="Email"
-          name="email"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-          required
-          style={{width: '400px'}}
-        />
-      </div>
-      <div className="mb-3 pt-0">
-        <textarea
-          placeholder="Your message"
-          name="message"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-          required
-          style={{width: '400px', height: '200px'}}
-        />
-      </div>
-      <div className="mb-3 pt-0">
-        <button
-          className="text-dark link bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-          type="submit"
-          style={{cursor: "none", width:'400px', backgroundColor: 'black'}}
-        >
-          Send a message
-        </button>
-      </div>
-    </form>
-    </>
+      <Container>
+        <h2 class='pt-3 pt-lg-0 mb-2 fs-2 fw-bold text-center' >Get in touch  </h2>
+          <Form ref={form} onSubmit={handleSubmit} style={{minWidth: '300px', maxWidth: '350px'}}>
+            <Form.Control required className='mb-3'  placeholder='Enter your name'  type='text' name='user_name'/>
+            <Form.Group className='mb-3' controlId='formBasicEmail'>
+              <Form.Control required type='text' placeholder='Enter email' name='user_email' />
+            </Form.Group>
+
+            <Form.Group className='mb-2' >
+              <Form.Control required as='textarea' rows={6} placeholder='Leave a message' name='message' />
+            </Form.Group>
+            <button
+                className='link btn'
+                type='submit'
+                style={{cursor: 'none'}}
+              >
+                Send a message
+              </button>
+        </Form>
+      </Container>
+
   );
 };
 
