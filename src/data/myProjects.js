@@ -3,7 +3,7 @@ const myProjects = [
     {
         id: 1,
         imgLink: 'https://raw.githubusercontent.com/midoritiba/CoffeShop-Cash-register-Project/main/mockup/coffe_shop.png',
-        projectName: 'MERN TODO list',
+        projectName: 'Cash Register',
         infoText: 'Simple responsive UI application for employees of a small coffee shop to use it as an order/payment record',
         technologiesUsed: 'HTML, CSS, JavaScript',
         gitHubLink: 'https://github.com/midoritiba/CoffeShop-Cash-register-Project',
@@ -23,7 +23,7 @@ const myProjects = [
     {
         id: 3,
         imgLink: 'https://raw.githubusercontent.com/midoritiba/goalsetter-mern-app/main/mockup_goalsetter.png',
-        projectName: 'Goalsetter',
+        projectName: 'MERN Goalsetter',
         infoText: 'Create an account and keep track of your goals',
         technologiesUsed: 'React, Node.js, Express, MongoDB and Mongoose',
         gitHubLink: 'https://github.com/midoritiba/goalsetter-mern-app',
