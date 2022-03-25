@@ -1,4 +1,4 @@
-https://michelle-midori-react-portfolio.netlify.app/
+https://michelle-midori.netlify.app/
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/32ca5532-1366-400f-89f2-fdf3476410f8/deploy-status)](https://app.netlify.com/sites/michelle-midori-react-portfolio/deploys)
 
