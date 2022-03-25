@@ -22,6 +22,7 @@ const About = () => {
                 <h3 className = 'about-item-title fw-bold'>Technologies</h3>
                 <p>HTML</p>
                 <p>CSS</p>
+                <p>Bootstrap</p
                 <p>JavaScript</p>
                 <p>React.js</p>
                 <p>MongoDB</p>
