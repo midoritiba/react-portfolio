@@ -12,6 +12,16 @@ const myProjects = [
     },
     {
         id: 2,
+        imgLink: 'https://raw.githubusercontent.com/midoritiba/ecommerce_mern/main/mockup.png',
+        projectName: 'MERN ECommerce',
+        infoText: 'Ecommerce with shopping cart, admin product management, user profile with orders...',
+        technologiesUsed: 'React, Node.js, Express, MongoDB and Mongoose',
+        gitHubLink: 'https://github.com/midoritiba/ecommerce_mern',
+        websiteLink: 'https://organic-care-app.herokuapp.com/',
+        category: 'full-stack'
+    },
+    {
+        id: 3,
         imgLink: 'https://raw.githubusercontent.com/midoritiba/feedback-react-app/main/mockup_feedbackapp.png',
         projectName: 'React UI Feedback Project',
         infoText: 'A Feedback page to write a comment and rate an item',
@@ -21,7 +31,7 @@ const myProjects = [
         category: 'front-end'
     },
     {
-        id: 3,
+        id: 4,
         imgLink: 'https://raw.githubusercontent.com/midoritiba/goalsetter-mern-app/main/mockup_goalsetter.png',
         projectName: 'MERN Goalsetter',
         infoText: 'Create an account and keep track of your goals',
@@ -30,6 +40,7 @@ const myProjects = [
         websiteLink: 'http://mernapp-michelle.herokuapp.com/',
         category: 'full-stack'
     },
+
 ]
 
 export default myProjects

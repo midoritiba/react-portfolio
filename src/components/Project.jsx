@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Project = ({ projectData }) => {
     return(
-        <Card style={{backgroundColor:'#e4e4e4', borderRadius: '30px'}} key = {projectData.key}  className='my-4 my-lg-0'>
+        <Card style={{backgroundColor:'#e4e4e4', borderRadius: '30px'}} key = {projectData.key}  className='my-4'>
             <Card.Title className='fw-bold mt-3'>{projectData.projectName}</Card.Title>
             <motion.div
                 whileHover={{
