@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -6,28 +7,20 @@ import Contacts from './pages/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { AnimatePresence } from 'framer-motion';
-import CustomCursor from 'custom-cursor-react';
-import 'custom-cursor-react/dist/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {
+  const [cursorX, setCursorX] = useState()
+  const [cursorY, setCursorY] = useState()
+
+  window.addEventListener('mousemove', (e) => {
+    setCursorX(e.pageX)
+    setCursorY(e.pageY)
+  })
   return (
     <>
     <AnimatePresence>
-      <CustomCursor
-      targets={['.link']}
-      customClass='custom-cursor'
-      dimensions={50}
-      fill='#FF6900'
-      smoothness={{
-        movement: 0.36,
-        scale: 0.07,
-        opacity: 0.2,
-      }}
-      targetOpacity={0.6}
-    />
-  
     <Router>
         <Header />
           <Routes>
@@ -37,6 +30,11 @@ const App = () => {
             <Route path='/contact' element={<Contacts />} />
           </Routes>
         <Footer />
+        <div class="cursor" 
+        style={{
+          left: cursorX + 'px',
+          top: cursorY + 'px'
+        }} ></div>
     </Router>
   </AnimatePresence>
   </>
