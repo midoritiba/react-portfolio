@@ -40,6 +40,16 @@ const myProjects = [
         websiteLink: 'http://mernapp-michelle.herokuapp.com/',
         category: 'full-stack'
     },
+    {
+        id: 5,
+        imgLink: 'https://github.com/midoritiba/API_MovieLibrary/blob/main/images/mockup.png',
+        projectName: 'Open Movie Database API',
+        infoText: 'Movie Search App with API using fetch, Asynchronous functions',
+        technologiesUsed: 'JavaScript, Bootstrap',
+        gitHubLink: 'https://github.com/midoritiba/API_MovieLibrary',
+        websiteLink: 'https://midoritiba.github.io/API_MovieLibrary/',
+        category: 'front-end'
+    },
 
 ]
 
