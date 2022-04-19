@@ -42,7 +42,7 @@ const myProjects = [
     },
     {
         id: 5,
-        imgLink: 'https://github.com/midoritiba/API_MovieLibrary/blob/main/images/mockup.png',
+        imgLink: 'https://raw.githubusercontent.com/midoritiba/API_MovieLibrary/main/images/mockup.png',
         projectName: 'Open Movie Database API',
         infoText: 'Movie Search App with API using fetch, Asynchronous functions',
         technologiesUsed: 'JavaScript, Bootstrap',
