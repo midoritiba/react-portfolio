@@ -44,7 +44,7 @@ const About = () => {
 
               <Draggable>
               <div  className = 'about-item-card draggable draggable-three' >
-                <a className='link'  rel='noopener noreferrer' target='_blank' href='https://drive.google.com/file/d/1W_kdGY446x92EcS_n_2K26rdlkBzutY6/view?usp=sharing'><h3 className = 'text-decoration-underline about-item-title fw-bold text-light deco'>My CV</h3><FaFileDownload className='text-light fs-1'/></a>
+                <a className='link'  rel='noopener noreferrer' target='_blank' href='https://drive.google.com/file/d/1k3TqpKPSg4Ven1Vr7gLdkyzcWFyKmZ7T/view?usp=sharing'><h3 className = 'text-decoration-underline about-item-title fw-bold text-light deco'>My CV</h3><FaFileDownload className='text-light fs-1'/></a>
               </div>
               </Draggable> 
 
