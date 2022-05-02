@@ -12,16 +12,26 @@ const myProjects = [
     },
     {
         id: 2,
+        imgLink: 'https://raw.githubusercontent.com/naomininnig/cooking-blog/main/recipeblog.png',
+        projectName: 'Recipe Blog',
+        infoText: 'Full Stack Recipe Blog. Search by name, category, add and edit a recipe and upload a picture',
+        technologiesUsed: 'EJS, Node.js, Express, MongoDB, Heroku',
+        gitHubLink: 'https://github.com/naomininnig/cooking-blog',
+        websiteLink: 'https://food-recipes-blog.herokuapp.com/',
+        category: 'full-stack'
+    },
+    {
+        id: 3,
         imgLink: 'https://raw.githubusercontent.com/midoritiba/ecommerce_mern/main/mockup.png',
         projectName: 'MERN ECommerce',
         infoText: 'Ecommerce with shopping cart, admin product management, user profile with orders...',
-        technologiesUsed: 'React, Node.js, Express, MongoDB and Mongoose',
+        technologiesUsed: 'React, Node.js, Express, MongoDB, Heroku',
         gitHubLink: 'https://github.com/midoritiba/ecommerce_mern',
         websiteLink: 'https://organic-care-app.herokuapp.com/',
         category: 'full-stack'
     },
     {
-        id: 3,
+        id: 4,
         imgLink: 'https://raw.githubusercontent.com/midoritiba/feedback-react-app/main/mockup_feedbackapp.png',
         projectName: 'React UI Feedback Project',
         infoText: 'A Feedback page to write a comment and rate an item',
@@ -31,7 +41,7 @@ const myProjects = [
         category: 'front-end'
     },
     {
-        id: 4,
+        id: 5,
         imgLink: 'https://raw.githubusercontent.com/midoritiba/goalsetter-mern-app/main/mockup_goalsetter.png',
         projectName: 'MERN Goalsetter',
         infoText: 'Create an account and keep track of your goals',
@@ -41,7 +51,7 @@ const myProjects = [
         category: 'full-stack'
     },
     {
-        id: 5,
+        id: 6,
         imgLink: 'https://raw.githubusercontent.com/midoritiba/API_MovieLibrary/main/images/mockup.png',
         projectName: 'Open Movie Database API',
         infoText: 'Movie Search App with API using fetch, Asynchronous functions',
@@ -50,6 +60,7 @@ const myProjects = [
         websiteLink: 'https://midoritiba.github.io/API_MovieLibrary/',
         category: 'front-end'
     },
+
 
 ]
 
